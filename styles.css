@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/*@font-face {      Para arquivos de fonte
+    font-family: 'nomeDaSuaEscolha';
+    src: url(love larry.otf) format(),src: url(love larry.ttf);
+    font-weight: normal;
+    font-style: normal;
+    
+    tipos de formart()
+    -opentype()
+    -truetype(ttf)
+    -embedded-opentype
+    -truetype-aat (Apple Avanced Typography)
+    -svg
+} */
+
+/*
+    # = id
+    . = class
+    > = child
+    : = pseudo-class
+    :: = pseudo-element
+
+*/
+
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-image: linear-gradient(to right, #AB41DF 10%,#860AC4 10%, #630790, #340F45);
+}
+
+
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(108, 2, 116);
+    width: 600px;
+    padding: 10px;
+}
+
+
+a{
+    color:black;
+}
+
+a:hover{
+    color:rgb(13, 145, 189);
+    
+};
+
+a:visited{
+    color:#340F45;
+}
+
+a:active{
+    color: red;
+}
+
+a::after{
+    content: '(link)';
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgray;
+}
+
+a>p{
+    display: none;
+}
+
+/*
+a:hover>p{
+    display: block;
+}
+*/
+
+
+h1,h2{
+    font-family: 'Dancing Script', cursive;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    /*font: italic bolder 3em 'Work Sans', sans-serif;*/
+    /* font-style font-weight - font-size font-family */
+    color: #630790;
+    text-align: center;
+    text-shadow: 1px 1px 1px #AB41DF;
+}
+
+/*
+    em HTML é id = em CSS é # (um elemento)
+    em HTML é class = em CSS é . (vários elementos)
+*/
+
+
+#principal{
+    text-align: center;
+}
+
+.topico{
+    text-align: center;
+}
+
+.destaque{
+    color:#340F45;
+    font-weight: bolder;
+}
+
+.imgPerfil{
+    top: 10px;
+    position: relative;
+    left: 240px;
+    right: 200px;
+}
+
+p{
+    text-align: justify;
+}
