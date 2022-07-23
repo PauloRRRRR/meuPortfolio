@@ -207,6 +207,10 @@ main{
     margin: 20px;
 }
 
+#contentHome, #contentContact, #contentAbout, #contentPortfolio{
+    display: none;
+}
+
 a{
     color:aliceblue;
 }
